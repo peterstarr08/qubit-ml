@@ -9,7 +9,7 @@ class NonLinearSVM(SVM):
     # To add parameters here
     def __init__(self) -> None:
         super().__init__()
-        self.clf = svm.SVC()
+        self.clf = svm.SVC()        # default kernel='rbf'
         
         log.debug("Non Linear SVM initialized")
     
